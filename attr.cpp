@@ -351,6 +351,11 @@ int main(int argc, char **argv) {
 			break;
 
 		switch (c) {
+/*
+		"-n | --not-indexed + | -  Set/reset content not indexed bit\n"
+		"-o | --offline     + | -  Set/reset offline bit\n"
+		"-t | --temporary   + | -  Set/reset temporary bit\n"
+*/
 			case 'a':
 				if (!set_flag(&opt.archive, optarg)) {
 					usage();
@@ -363,11 +368,23 @@ int main(int argc, char **argv) {
 			case 'e':
 				opt.abort = true;
 				break;
+			case 'h':
+				if (!set_flag(&opt.hidden, optarg)) {
+					usage();
+					exit(1);
+				}
+				break;
 			case 'i':
 				opt.hide = true;
 				break;
-			case 'h':
-				if (!set_flag(&opt.hidden, optarg)) {
+			case 'n':
+				if (!set_flag(&opt.not_indexed, optarg)) {
+					usage();
+					exit(1);
+				}
+				break;
+			case 'o':
+				if (!set_flag(&opt.offline, optarg)) {
 					usage();
 					exit(1);
 				}
@@ -384,23 +401,29 @@ int main(int argc, char **argv) {
 					exit(1);
 				}
 				break;
+			case 't':
+				if (!set_flag(&opt.temporary, optarg)) {
+					usage();
+					exit(1);
+				}
+				break;
 			case 'q':
 				if (opt.verbose > 0)
 					--opt.verbose;
 				break;
-			case 'v':
-				++opt.verbose;
-				break;
-			case 'y':
-				opt.dry_run = true;
-				break;
 			case 'R':
 				opt.recursive = true;
+				break;
+			case 'v':
+				++opt.verbose;
 				break;
 			case 'V':
 				cout <<
 					APPNAME " " APPVERSION " - " __DATE__ << endl <<
 					APPCOPYRIGHT << endl;
+				break;
+			case 'y':
+				opt.dry_run = true;
 				break;
 			case '?':
 				usage();

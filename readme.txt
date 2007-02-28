@@ -1,5 +1,5 @@
-attr - Version 1.3 - Nov 24 2006
-Copyright (c) 2004-2006 Ross Smith II (http://smithii.com) All Rights Reserved
+attr - Version 1.4 - Feb 28 2007
+Copyright (c) 2004-2007 Ross Smith II (http://smithii.com) All Rights Reserved
 
 ------------------------------------------------------------------------------
 

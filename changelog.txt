@@ -1,5 +1,11 @@
 attr changelog
 
+Version 1.4 - 28 Feb 07:
+
+	Enabled -n | --not-indexed + | -  Set/reset content not indexed bit
+	Enabled -o | --offline     + | -  Set/reset offline bit
+	Enabled -t | --temporary   + | -  Set/reset temporary bit
+
 Version 1.3 - 14 Nov 06:
 
 	Added display of attributes in the form 'arhsnot'
