@@ -21,4 +21,4 @@ General Public License for more details.
 #define VER_MINOR				4
 #define VER_STRING2				"1.4"
 
-#include "ver_defaults.h"
+#include <ver_defaults.h>

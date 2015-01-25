@@ -114,7 +114,6 @@ CLEAN :
 	-@erase "$(INTDIR)\vc60.pdb"
 	-@erase "$(OUTDIR)\attr.bsc"
 	-@erase "$(OUTDIR)\attr.exe"
-	-@erase "$(OUTDIR)\attr.ilk"
 	-@erase "$(OUTDIR)\attr.pdb"
 
 "$(OUTDIR)" :
@@ -166,7 +165,7 @@ BSC32_SBRS= \
 <<
 
 LINK32=link.exe
-LINK32_FLAGS=sharedd.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"$(OUTDIR)\attr.pdb" /debug /machine:I386 /out:"$(OUTDIR)\attr.exe" /pdbtype:sept /libpath:"..\shared" 
+LINK32_FLAGS=sharedd.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:no /pdb:"$(OUTDIR)\attr.pdb" /debug /machine:I386 /out:"$(OUTDIR)\attr.exe" /pdbtype:sept /libpath:"..\shared" 
 LINK32_OBJS= \
 	"$(INTDIR)\attr.obj" \
 	"$(INTDIR)\attr.res"
