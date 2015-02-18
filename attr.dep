@@ -1,14 +1,15 @@
 # Microsoft Developer Studio Generated Dependency File, included by attr.mak
 
 .\attr.cpp : \
-	"..\..\..\..\..\progra~1\mifd68~1\include\basetsd.h"\
-	"..\..\..\..\..\progra~1\mifd68~1\include\guiddef.h"\
-	"..\..\..\..\..\progra~1\mifd68~1\include\reason.h"\
-	"..\..\..\..\..\progra~1\mifd68~1\include\stralign.h"\
-	"..\..\..\..\..\progra~1\mifd68~1\include\tvout.h"\
-	"..\shared\getopt.h"\
-	"..\shared\ver_defaults.h"\
+	{$(INCLUDE)}"basetsd.h"\
+	{$(INCLUDE)}"guiddef.h"\
+	{$(INCLUDE)}"reason.h"\
+	{$(INCLUDE)}"specstrings.h"\
+	{$(INCLUDE)}"stralign.h"\
+	{$(INCLUDE)}"tvout.h"\
+	{$(INCLUDE)}"getopt.h"\
 	".\version.h"\
+	{$(INCLUDE)}"ver_defaults.h"\
 	
 
 .\attr.rc : \

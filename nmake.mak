@@ -1,10 +1,10 @@
 all:
-	$(CYGENV) nmake /f attr.mak CFG="attr - Win32 Release"	all
-	$(CYGENV) nmake /f attr.mak CFG="attr - Win32 Debug"	all
+	$(MAKE) /f attr.mak CFG="attr - Win32 Release"	all
+	$(MAKE) /f attr.mak CFG="attr - Win32 Debug"	all
 
 clean:
-	$(CYGENV) nmake /f attr.mak CFG="attr - Win32 Release"	clean
-	$(CYGENV) nmake /f attr.mak CFG="attr - Win32 Debug"	clean
+	$(MAKE) /f attr.mak CFG="attr - Win32 Release"	clean
+	$(MAKE) /f attr.mak CFG="attr - Win32 Debug"	clean
 
 realclean: clean
 	-cmd /c del /s *.bak
