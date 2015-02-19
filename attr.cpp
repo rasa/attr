@@ -38,7 +38,7 @@ using namespace std;
 
 static char *progname = APPNAME;
 
-static char *short_options = "a:deh:in:o:qr:s:t:vyVR?";
+static char *short_options = "a:deh:in:o:qr:s:t:vyRV?";
 
 static struct option long_options[] = {
   {"abort-on-error",	no_argument,		0, 'e'},
@@ -333,6 +333,11 @@ int main(int argc, char **argv) {
 
 		int c = getopt_long(argc, argv, short_options, long_options, &option_index);
 
+		if (opterr) {
+			usage();
+			exit(1);
+		}
+
 		if (c == -1)
 			break;
 
@@ -413,9 +418,11 @@ int main(int argc, char **argv) {
 				break;
 			case '?':
 				usage();
-				break;
+				exit(0);
 			default:
-				cerr << "Invalid option: " << optarg << endl;
+				if (optarg) {
+					cerr << "Invalid option: " << optarg << endl;
+				}
 				usage();
 				exit(1);
 		}
