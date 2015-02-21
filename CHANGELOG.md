@@ -1,15 +1,16 @@
-## 1.5 (unreleased)
+## 1.5 (20-Feb-2015)
 
+  * Workaround buggy getopt implementation
   * Updated to Visual Studio 2013
   * Switch to MIT license
 
-## 1.4 (28 Feb 07)
+## 1.4 (28-Feb-2007)
 
   * Enabled -n | --not-indexed + | -  Set/reset content not indexed bit
   * Enabled -o | --offline     + | -  Set/reset offline bit
   * Enabled -t | --temporary   + | -  Set/reset temporary bit
 
-## 1.3 (14 Nov 06)
+## 1.3 (14-Nov-2006)
 
   * Added display of attributes in the form 'arhsnot'
   * Added -d | --directories        Set/reset bits on directories
@@ -21,11 +22,11 @@
   * Report on changed files only (unless -v is used)
   * Skipped processing of . and .. directories
 
-## 1.2 (19 Jul 06)
+## 1.2 (19-Jul-2006)
 
   * Standardized version information across all programs
 
-## 1.1 (08 Apr 06)
+## 1.1 (08-Apr-2006)
 
   * Added -n | --not-indexed + | -  Set/reset content not indexed bit
   * Added -o | --offline     + | -  Set/reset offline bit
@@ -35,6 +36,6 @@
   * Improved build scripts
   * Updated documentation
 
-## 1.0 (12 Apr 04)
+## 1.0 (12-Apr-2004)
 
   * Initial release
