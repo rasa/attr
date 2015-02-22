@@ -419,10 +419,10 @@ int main(int argc, char **argv) {
 			case '?':
 				usage();
 				exit(0);
+			case ':':
+				fprintf(stderr, "Option -%s requires an operand\n", optopt);
+				// fallthrough
 			default:
-				if (optarg) {
-					cerr << "Invalid option: " << optarg << endl;
-				}
 				usage();
 				exit(1);
 		}
