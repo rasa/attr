@@ -158,7 +158,7 @@ UPLOADED_FILES=
 
 define UPLOAD_FILE
 
-.$(1).uploaded:	$(RELEASED)
+.$(1).uploaded:	$(1) $(RELEASED)
 	$(CURL) $(CURL_OPTS) \
 		--write-out "%{http_code}" \
 		--output /tmp/$(1).tmp \
