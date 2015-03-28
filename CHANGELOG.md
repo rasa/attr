@@ -1,3 +1,16 @@
+## 1.6 (27-Mar-2015)
+
+  * Executables signed with StartSSL code signing certificate
+  * Release zip files are gpg signed and sha256 hashed
+  * Standardize build scripts
+  * Update documentation
+  
+## 1.5 (22-Feb-2015)
+
+  * Improve command line option processing
+  * Updated to Visual Studio 2013
+  * Switch to MIT license
+  
 ## 1.5 (22-Feb-2015)
 
   * Improve command line option processing
