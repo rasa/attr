@@ -1,3 +1,7 @@
+## 1.7 (unreleased)
+
+  * Update Makefile
+
 ## 1.6 (27-Mar-2015)
 
   * Executables signed with StartSSL code signing certificate
